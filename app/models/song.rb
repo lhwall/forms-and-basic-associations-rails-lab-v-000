@@ -31,7 +31,7 @@ end
   def note_contents
     contents = []
     self.notes.each do |note|
-      contents << note
+      contents << note[content]
     end
     contents
   end
