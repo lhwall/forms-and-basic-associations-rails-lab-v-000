@@ -23,7 +23,7 @@ class Song < ActiveRecord::Base
     notes.each do |content|
       if content.strip != ""
         #byebug
-      self.notes << content
+      self.notes.new(content: content)
     end
   end
 end
