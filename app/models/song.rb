@@ -31,6 +31,7 @@ end
   def note_contents
     contents = []
     self.notes.each do |note|
+      byebug
       contents << note[content]
     end
     contents
